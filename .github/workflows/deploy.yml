@@ -38,7 +38,6 @@ jobs:
       # Task 2: Build and push Docker image
       - name: Build and Push Docker image
         run: |
-          # TODO: Build Docker image and push to Artifact Registry
 	  docker build -t us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/flask-app .
 	  docker push  us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/flask-app
 	  
